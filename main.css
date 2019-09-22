@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+@font-face {
+    font-family: 'productNameFont';
+    src: url('fonts/Gotham-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+/*Nav Bar*/
+.navBar {
+    height: 10vh;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-list{
+    margin-left: 15%;
+    margin-top: 1.5%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.cat:visited{
+    color:#000;
+    padding: 0px;
+}
+
+a.cat:link{
+    color:#000;
+    padding: 0px;
+}
+
+.cat{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+}
+
+ul a li{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+ul a li:hover{
+    color:#fff;
+    background-color: darkblue;
+    border-radius: 10%;
+    transition: 0.10s all;
+        
+}
+a.cat:hover{
+    color:#fff;
+    background-color: darkblue;
+    border-radius: 10%;
+    transition: 0.10s all;
+}
+
+ul li ul li{
+    display: none;
+    padding: 1%;
+}
+
+ul li:hover ul li{
+    display: block;
+    background-color: darkblue;
+    color:#fff;
+}
+
+ul li ul li:hover{
+    background-color:blue;
+    color:#fff;
+}
+/*old*/
+
+.loginBtn {
+    background-color: #28A745;
+    position: absolute;
+    right: 50px;
+    margin-top: 2.5vh;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.loginBtnLink {
+
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+.navImage {
+
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+
+/*page cards*/
+.cardHome {
+    height: 100vh;
+    background-color: #2b2dad;
+}
+
+.ho{
+    color: #fff;
+}
+
+.card3 {
+    background-color: #EAEAEC;
+}
+
+.card4 {
+    background-color: #EAEAEC;
+}
+
+.card5 {
+    background-color: #EAEAEC;
+}
+
+.card6 {
+    background-color: #EAEAEC;
+}
+
+.card7 {
+    background-color: #EAEAEC;
+}
+
+.card:first-child {
+    position: absolute;
+    top: 10vh;
+
+}
+
+.cardIcon {
+    position: absolute;
+    margin-top: 10px;
+    left: 50px;
+    background: url("https://cdn3.iconfinder.com/data/icons/adobe-creative-cloud-1/625/Adobe_Illustrator_CC_Creative_Cloud-512.png");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.c {
+    height: 90vh;
+
+}
+
+hr {
+    width: 100%;
+    background-color: #161616;
+    height: 5px;
+    border: 0;
+}
+
+.num {
+    position: absolute;
+    font-family: productNameFont;
+    left: 175px;
+    font-size: 50px;
+    margin-top: 20px;
+    color: #161616;
+}
+
+/*Product Area*/
+.productImg {
+    height: 60vh;
+    width: 45%;
+    background-image: url('images/ill.jpg');
+    background-size: cover;
+    position: absolute;
+    margin-top: 20vh;
+    left: 55%;
+}
+
+.productText p {
+    font-family: 'Manjari', sans-serif;
+    font-size: 25px;
+    float: left;
+    padding-top: 20vh;
+    padding-left: 10vh;
+    position: relative;
+    width: 45%;
+}
+/*new*/
+.productcontact{
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
+    font-size: 25px;
+    float: left;
+    padding-top: 20vh;
+    padding-left: 20%;
+    position: relative;
+    width: 45%;
+    color: #fff;
+}
+
+.welc{
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
+    font-size: 25px;
+    float: left;
+    padding-top: 12vh;
+    padding-left: 20%;
+    position: relative;
+    width: 45%;
+    color: #fff;
+}
+.welc1{
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
+    font-size: 25px;
+    float: left;
+    padding-top: 25vh;
+    padding-left: 22%;
+    position: relative;
+    width: 45%;
+    color: #fff;
+}
+
+
+.slideshow{
+    padding-top: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    height: 700px;
+}
+
+.content{
+    margin: auto;
+    width: 200px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: progress;
+}
+
+.content-carrousel figure{
+    width: 100%;
+    height: 180px;
+    border: 1px solid blueviolet;
+    overflow: hidden;
+    position: absolute;
+}
+
+.content-carrousel img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+.shadow{
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px red;
+    border-radius: 2px;
+}
+
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(80deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(160deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(200deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9){
+    transform: rotateY(320deg) translateZ(300px);
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+.productabout{
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
+    font-size: 25px;
+    float: left;
+    padding-top: 20vh;
+    padding-left: 20%;
+    position: relative;
+    width: 45%;
+    color: #fff;
+}
+
+.cont1{
+    padding-left: 50%;
+}
+
+.cont2 {
+    padding-left: 50%;
+}
+
+a.cont:link{
+    color: #fff;
+}
+
+a.cont:hover{
+    color: red;
+}
+
+a.cont:visited{
+    color: #fff;
+}
+
+a.about:link{
+    color: #fff;
+}
+
+a.about:visited{
+    color: #fff;
+}
+
+a.about:hover{
+    color: red;
+}
+/*old*/
+.links {
+    position: absolute;
+    left: 10vh;
+    margin-top: 70vh;
+}
+
+.link {
+
+    margin-right: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+}
+
+.linkWindows {
+    background-image: url('images/windows.png');
+    background-position-y: 10px;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-color: #277CD3;
+    background-position: center;
+}
+
+.linkApple {
+    background-image: url('images/maclogo.png');
+    background-position-y: 10px;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+}
+
+.linkLinux {
+    background-image: url('images/linux.png');
+    background-position-y: 10px;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-color: #ff5733;
+    background-position: center;
+}
+
+.linkWeb {
+    background-image: url('images/weblink.png');
+    background-position-y: 10px;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+}
+
+.favIcon {
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.favStar {
+    padding: 10px;
+    color: #161616;
+
+
+}
+
+/*Data Table*/
+table {
+    font-family: 'Manjari', sans-serif;
+    position: absolute;
+    margin-top: 15vh;
+    left: 150px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    padding: 7px;
+    border: 5px solid black;
+}
+
+.tableSmallText {
+    padding: 0;
+    font-size: 20px;
+}
+
+th {
+    font-size: 30px;
+}
+
+td {
+    font-size: 24px;
+}
+
+/*Login Page*/
+.loginBody {
+
+    background-image: url('images/loginBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30vh;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+.loginCard {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    position: relative;
+
+}
+
+.loginForm {
+    padding: 44px;
+}
+
+.loginForm p {
+    padding-top: 5px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginUsername {
+    padding-top: 5px;
+}
+
+.loginPassword {
+    margin-bottom: 20px;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 90%;
+    margin: 5px;
+    height: 30px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-color: #161616;
+}
+
+input:focus {
+    border-bottom-color: #007acc;
+    background-color: #BBDCFF;
+    outline: none;
+}
+
+.loginButton {
+    width: 70px;
+    text-align: center;
+    background-color: #007acc;
+    border: 0;
+    color: #fff;
+}
+
+.loginImg {
+    padding-bottom: 10px;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.contentw{
+    padding-left: 20px;
+    background-color: #EAEAEC;
+    font-size: 20px;
+}
+
+.vid{
+    padding-left: 20%;
+}
+
+.vfx{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+}
+
+/*footer*/
+#footer{
+    background-color: black;
+    position: relative;
+    height: 250px;
+    margin-bottom: -100px;
+    clear: both;
+    color: #fff;
+}
+.fot-list{
+    margin-left: 12%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    padding-top:20px;
+    list-style-type: none;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.cate{
+    margin-left: 15%;
+    font-family: 'Roboto';
+    font-size: 20px;
+    padding-top:20px;
+    list-style-type: none;
+    float: left;
+    display: block;
+    text-align: center;
+}
+ul li a:visited{
+    color: #fff;
+}
+ul li a:link{
+    color: #fff;
+    text-decoration: none;
+}
